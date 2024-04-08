@@ -1,0 +1,63 @@
+
+.button_initPage{
+    border: solid 2px rgb(255, 191, 73);
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: grid;
+    place-content: center;
+}
+.containerBtn{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 10px;
+}
+.content_button{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: rgb(255, 191, 73);
+    transition: 0.3s;
+}
+
+.button_initPage:hover .content_button{
+    height: 70px;
+    width: 70px;
+}
+
+.content_button:hover{
+    background-color:  rgb(73, 115, 255);
+}
+
+#particle-js{
+    height: 120px;
+    width: 120px;
+    background-color: red;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 375px) {
+    .welcome-text {
+        font-size: 2.2rem;
+    }
+}
+
+/* ANIMATION */
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 599px) {
+    .containerBtn,.button_initPage,.content_button{
+        display: none;
+    }
+}

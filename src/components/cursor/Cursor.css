@@ -1,0 +1,31 @@
+
+.cursor-dot {
+  width: 5px;
+  height: 5px;
+  background-color: rgb(245, 193, 24);
+}
+
+.cursor-circle {
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(245, 193, 24);
+  transition: 0.4s;
+}
+
+.cursor-dot,
+.cursor-circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+@media (max-width: 699px) {
+  .cursor-circle,.cursor-dot{
+    display: none;
+  }
+}

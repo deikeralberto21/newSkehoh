@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+.contentMain {
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.headerChocolate{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding: 5px;
+}
+
+.headerChocolate div{
+    width: 100%;
+    text-align: center;
+}
+.headerChocolate div h1{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.chocolate_name{
+    text-align: center;
+    display: inline;
+    font-family: "Gruppo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.bj{
+    transition: 0.3s;
+}
