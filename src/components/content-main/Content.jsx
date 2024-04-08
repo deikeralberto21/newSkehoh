@@ -7,7 +7,7 @@ import bgMusic from '../../../assets/mp3/background-sound2.mp3';
 import Btn from '../Btn/Btn.jsx';
 import { OrbitControls, Environment} from '@react-three/drei';
 import Objects from '../ObjectCollection/Objects.jsx';
-import HDR from '../../../assets/hdri2.hdr';
+import HDR from '../../../assets/R0.hdr';
 import Carousel from '../Carousel/Carousel.jsx';
 
 // CONTENT
@@ -47,7 +47,7 @@ export default function Content() {
           <Scene>
             <color attach="background" args={['#f2f2f2']}></color>
             <OrbitControls enablePan={false} enableZoom={false} />
-            <Environment files={HDR}/>
+            <Environment files={HDR} background={true}/>
             <Objects selected={choco} />
           </Scene>
         </div>
