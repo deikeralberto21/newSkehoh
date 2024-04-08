@@ -1,7 +1,7 @@
 import React from 'react'
 // Objetos
-import ChocoBergamot from '../3D/Choco1.jsx'
-import ChocoMezcal from '../3D/Choco2.jsx'
+import ChocoBergamot from '../3D/Bergamot.jsx'
+import ChocoMezcal from '../3D/Mezcal.jsx'
 import ChocoCoconut from '../3D/Coconut.jsx'
 import ChocoEspresso from '../3D/Espresso.jsx'
 import ChocoBlackCurrant from '../3D/Blackcurrant.jsx'
