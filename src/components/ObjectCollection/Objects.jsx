@@ -43,7 +43,7 @@ export default function Objects({selected}){
     return(
         <>
             <ChocoBergamot animated={animate} opacity_3D={searchModel('bergamot')} position={position_obj} scale={scale_act} />
-            <ChocoMezcal animated={animate} opacity_3D={searchModel('mezcal')} position={position_obj} scale={scale_act} />
+            {/* <ChocoMezcal animated={animate} opacity_3D={searchModel('mezcal')} position={position_obj} scale={scale_act} />
             <ChocoCoconut animated={animate} opacity_3D={searchModel('coconut')} position={position_obj} scale={scale_act} />
             <ChocoEspresso animated={animate} opacity_3D={searchModel('espresso')} position={position_obj} scale={scale_act} />
             <ChocoBlackCurrant animated={animate} opacity_3D={searchModel('blackcurrant')} position={position_obj} scale={scale_act} />
@@ -59,7 +59,7 @@ export default function Objects({selected}){
             <ChocoBourbon animated={animate} opacity_3D={searchModel('pecanPraline')} position={position_obj} scale={scale_act} />
             <ChocoSafron animated={animate} opacity_3D={searchModel('saffron')} position={position_obj} scale={scale_act} />
             <ChocoYuzu animated={animate} opacity_3D={searchModel('yuzu')} position={position_obj} scale={scale_act} />
-            
+             */}
         </>
     )
 }

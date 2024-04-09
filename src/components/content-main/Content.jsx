@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useMemo } from 'react';
 import { Howl, Howler } from 'howler'; // Importa Howler para tener acceso a las funciones de fade
 import * as THREE from 'three';
 import Scene from '../3D/scene.jsx';
@@ -7,7 +7,7 @@ import bgMusic from '../../../assets/mp3/background-sound2.mp3';
 import Btn from '../Btn/Btn.jsx';
 import { OrbitControls, Environment} from '@react-three/drei';
 import Objects from '../ObjectCollection/Objects.jsx';
-import HDR from '../../../assets/R0.hdr';
+import HDR from '../../../assets/hdri5.hdr';
 import Carousel from '../Carousel/Carousel.jsx';
 
 // CONTENT
@@ -37,6 +37,9 @@ export default function Content() {
     setChoco(element);
   };
 
+  const cachedHDR = useMemo(() => {
+    return HDR; // Suponiendo que HDR es una referencia estática al archivo HDR
+  }, []);
 
   return (
     <main className='container_page'>
@@ -47,7 +50,7 @@ export default function Content() {
           <Scene>
             <color attach="background" args={['#f2f2f2']}></color>
             <OrbitControls enablePan={false} enableZoom={false} />
-            <Environment files={HDR} background={true}/>
+            <Environment files={cachedHDR} background={true}/>
             <Objects selected={choco} />
           </Scene>
         </div>
