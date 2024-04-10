@@ -10,7 +10,7 @@ export function Model(props) {
   const { nodes, materials } = useGLTF('/le_noir.gltf')
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.Chocolate.geometry} material={materials['Chocolate Verde.001']} />
+      <mesh geometry={nodes.Chocolate002.geometry} material={materials['Chocolate Verde.002']} />
     </group>
   )
 }
