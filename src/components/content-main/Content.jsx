@@ -56,7 +56,7 @@ export default function Content() {
         </div>
         <div className='headerChocolate'>
           <div>
-            <h1 className='chocolate_name'>CHOCOLATE {choco ? choco.toUpperCase() : 'BERGAMOT'}</h1>
+            <h1 className='chocolate_name'>{choco ? choco.toUpperCase() : 'BERGAMOT'}</h1>
           </div>        
         </div>
         <Carousel handleEvent={selectChoco} />

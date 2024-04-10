@@ -1,11 +1,11 @@
-import React from 'react'
+import {useMemo} from 'react'
 import ReactDOM from 'react-dom/client'
 import Content from '../components/content-main/Content.jsx'
 import '../index.css'
 import { useFrame } from '@react-three/fiber'
 import { OrbitControls, Environment, Sphere} from '@react-three/drei';
 import Choco from '../components/3DPage/Milk_cookies.jsx'
-import HDR from '../../assets/hdri2.hdr'
+import HDR from '../../assets/hdri5.hdr'
 import Scene from '../components/3D/scene.jsx'
 export default function Home(){
     function animate(ref) {
@@ -17,6 +17,9 @@ export default function Home(){
     }
     const position_obj = [0,-0.1,0]
     const scale_act = [0.8,0.8,0.8]
+    const cachedHDR = useMemo(() => {
+      return HDR; // Suponiendo que HDR es una referencia estática al archivo HDR
+    }, []);
     return(
       <main className='container_page'>
       <div className='contentMain'>
@@ -24,14 +27,14 @@ export default function Home(){
           <Scene>
             <color attach="background" args={['#f2f2f2']}></color>
             <OrbitControls enablePan={false} enableZoom={false} />
-            <Environment files={HDR}/>
+            <Environment files={cachedHDR}/>
             {/* <Choco animated={animate} position={position_obj} scale={scale_act}></Choco> */}
             <Choco animated={animate} position={position_obj} scale={scale_act}></Choco>
           </Scene>
         </div>
         <div className='headerChocolate'>
           <div>
-            <h1 className='chocolate_name'>CHOCOLATE MILK & COOKIES</h1>
+            <h1 className='chocolate_name'>MILK & COOKIES</h1>
           </div>        
         </div>
       </div>
