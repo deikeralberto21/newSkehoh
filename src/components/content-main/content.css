@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 .contentMain {
     animation: fadeInAnimation ease 5s;
     animation-iteration-count: 1;
@@ -17,13 +17,20 @@
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     padding: 5px;
+    background-color: black;
+    color: orange;
 }
 
 .headerChocolate div{
-    width: 100%;
     text-align: center;
+}
+
+.headerChocolate div:nth-child(1){
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
 }
 .headerChocolate div h1{
     display: inline-block;
@@ -34,8 +41,9 @@
 .chocolate_name{
     text-align: center;
     display: inline;
-    font-family: "Gruppo", sans-serif;
-    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
     font-style: normal;
 }
 @keyframes fadeInAnimation {
@@ -48,4 +56,17 @@
 }
 .bj{
     transition: 0.3s;
+}
+
+.iconHeader{
+   height: 35px;
+   width: 35px;
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.3s;
+
+}
+.iconHeader:hover{
+    background-color: orange;
+    border-radius: 100%;
 }

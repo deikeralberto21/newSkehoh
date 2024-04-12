@@ -6,11 +6,13 @@ Command: npx gltfjsx@6.2.16 le_noir.gltf
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export function Model(props) {
+export default function Model(props) {
   const { nodes, materials } = useGLTF('/le_noir.gltf')
+  const groupRef = useRef()
+  props.animated(groupRef)
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.Chocolate002.geometry} material={materials['Chocolate Verde.002']} />
+      <mesh geometry={nodes.Chocolate.geometry} material={materials['Chocolate Verde.001']} />
     </group>
   )
 }

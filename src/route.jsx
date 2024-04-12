@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './page/Home.jsx'
+import './components/content-main/content.css'
 import Mezcal from './page/MezcalPage.jsx'
 import BlackCurrant from './page/BlackCurrantPage.jsx'
 import Berga from './page/BergamotPage.jsx'
@@ -18,28 +18,34 @@ import Raspbe from './page/RaspbePage.jsx'
 import Saffron from './page/SaffronPage.jsx'
 import Yuzu from './page/YuzuPage.jsx'
 import GrandMarnier from './page/GrandMarnier.jsx'
+import Burnt from './page/Burnt.jsx'
+import Persian from './page/PersianPage.jsx'
+import Lenoir from './page/LeNoir.jsx'
 export default function AppRoute() {
   return (
     <Routes>
-      <Route path='/' element={<Home></Home>}/>
-      <Route path='/bergamot' element={<Berga/>}/>
-      <Route path='/mezcal' element={<Mezcal/>}/>
-      <Route path='/blackcurrant' element={<BlackCurrant/>}/>
-      <Route path='/bourbon' element={<Bourbon/>}/>
-      <Route path='/Coconut' element={<Coconut/>}/>
-      <Route path='/espresso' element={<Espresso/>}/>
-      <Route path='/grandmarnier' element={<GrandMarnier/>}/>
-      <Route path='/Hazelnut' element={<Hazelnut/>}/>
-      <Route path='/honey' element={<Honey/>}/>
-      <Route path='/irish' element={<Irish/>}/>
-      <Route path='/lemon' element={<Lemon/>}/>
-      <Route path='/meyer' element={<Meyer/>}/>
-      <Route path='/milk' element={<Milk/>}/>
-      <Route path='/orange' element={<Orange/>}/>
-      <Route path='/passion' element={<Passion/>}/>
-      <Route path='/raspbe' element={<Raspbe/>}/>
-      <Route path='/saffron' element={<Saffron/>}/>
-      <Route path='/yuzu' element={<Yuzu/>}/>
+      {/* <Route path='/' element={<Home></Home>}/> */}
+      <Route path='/shekoh/bergamot' element={<Berga/>}/>
+      <Route path='/shekoh/mezcal' element={<Mezcal/>}/>
+      <Route path='/shekoh/blackcurrant' element={<BlackCurrant/>}/>
+      <Route path='/shekoh/bourbon' element={<Bourbon/>}/>
+      <Route path='/shekoh/Coconut' element={<Coconut/>}/>
+      <Route path='/shekoh/espresso' element={<Espresso/>}/>
+      <Route path='/shekoh/grandmarnier' element={<GrandMarnier/>}/>
+      <Route path='/shekoh/Hazelnut' element={<Hazelnut/>}/>
+      <Route path='/shekoh/honey' element={<Honey/>}/>
+      <Route path='/shekoh/irish' element={<Irish/>}/>
+      <Route path='/shekoh/lemon' element={<Lemon/>}/>
+      <Route path='/shekoh/meyer' element={<Meyer/>}/>
+      <Route path='/shekoh/milk' element={<Milk/>}/>
+      <Route path='/shekoh/orange' element={<Orange/>}/>
+      <Route path='/shekoh/passion' element={<Passion/>}/>
+      <Route path='/shekoh/raspbe' element={<Raspbe/>}/>
+      <Route path='/shekoh/saffron' element={<Saffron/>}/>
+      <Route path='/shekoh/yuzu' element={<Yuzu/>}/>
+      <Route path='/shekoh/burnt' element={<Burnt/>}/>
+      <Route path='/shekoh/persian' element={<Persian/>}/>
+      <Route path='/shekoh/lenoir' element={<Lenoir/>}/>
       <Route path='*' element={<h3>not found 404</h3>}/>
     </Routes>
   );
