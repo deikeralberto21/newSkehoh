@@ -27,8 +27,8 @@ export default function Home(){
       <Loading></Loading>
         <div style={{ height: '100vh', width: '100vw', position: 'absolute', margin: 'auto', zIndex: -999 }}>
           <Scene>
-            <color attach="background" args={['#f2f2f2']}></color>
-            <OrbitControls enablePan={false} enableZoom={false} />
+            <color attach="background" args={['#f2f2f2']}></color> 
+            <OrbitControls enablePan={false} enableZoom={false} enableRotate={true} maxPolarAngle={Math.PI / 2 - 0.1}/>          
             <Environment files={cachedHDR} background={true}/>
             {/* <Choco animated={animate} position={position_obj} scale={scale_act}></Choco> */}
             <Choco animated={animate} position={position_obj} scale={scale_act}></Choco>

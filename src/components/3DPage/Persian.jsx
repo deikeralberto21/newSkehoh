@@ -12,7 +12,7 @@ export default function Model(props) {
   props.animated(groupRef)
   return (
     <group ref={groupRef} {...props} dispose={null}>
-      <mesh geometry={nodes.Chocolate001.geometry} material={materials['Material.001']} scale={0.7} />
+      <mesh geometry={nodes.Chocolate001.geometry} material={materials['ChocolateCorazon']} scale={0.7} />
     </group>
   )
 }
